@@ -1,0 +1,80 @@
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Dang Minh Tam
+  ID: S3980087
+  Acknowledgement: Youtube, ChatGPT, W3School
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/366742136_1645308189305800_889614564588525669_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=2gHPHlNsvZcAX-nmnrR&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfBv71ZfBU39IbavYzah_fiUws8Bhb2oUKNB1-az05f5WQ&oe=64D78CBB" alt="Bookstore Logo" width="200" height="200"/>
+            <h1>The Bookstore</h1>
+            <h3>since 2023</h3>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="crime.html">Crime and Thriller</a></li>
+                <li><a href="religious.html">Religious and Self-help</a></li>
+                <li><a href="children.html">Children's Books</a></li>
+                <li><a href="fantasy.html">Fantasy and Sci-fi</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="contactPurpose">Contact Purpose</label>
+            <select id="contactPurpose" name="contactPurpose" required>
+                <option value="sell">I want to sell books</option>
+                <option value="buy">I want to buy books</option>
+            </select>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label>Contact Preference</label>
+            <input type="checkbox" id="prefEmail" name="contactPreference[]" value="email">
+            <label for="prefEmail">By Email</label>
+            <input type="checkbox" id="prefPhone" name="contactPreference[]" value="phone">
+            <label for="prefPhone">By Phone</label>
+            
+            <label>Receive Weekly Newsletter</label>
+            <input type="radio" id="newsletterYes" name="newsletter" value="yes" checked>
+            <label for="newsletterYes">Yes</label>
+            <input type="radio" id="newsletterNo" name="newsletter" value="no">
+            <label for="newsletterNo">No</label>
+            
+            <label for="extraNotes">Extra Notes</label>
+            <textarea id="extraNotes" name="extraNotes"></textarea>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

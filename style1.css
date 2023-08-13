@@ -1,0 +1,99 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+h2, h3 {
+  color: #333;
+  margin: 20px 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+button {
+  background-color: #3498db; /* Blue pastel color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+nav {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #aaa;
+}
